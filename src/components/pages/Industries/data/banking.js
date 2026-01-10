@@ -1,272 +1,197 @@
-export const bankingCaseStudies = [
-  {
-    id: 1,
-    category: "Banking and Financial Markets",
-    title: "Accelerate modernization to drive business priorities",
+import { Database, Shield, Lightbulb } from "lucide-react";
+
+/* ==============================
+   BANKING & FINANCIAL MARKETS PAGE
+================================ */
+
+export const bankingPage = {
+  /* ================= HERO ================= */
+  hero: {
+    breadcrumb: {
+      label: "Industries",
+      href: "#",
+    },
+    title: "Banking & Financial Markets",
+    subtitle:
+      "Delivering real-time, secure, and innovative digital banking experiences",
+    backgroundImage: "/assets/hero-banking.jpg",
+    cards: [
+      {
+        title:
+          "Accelerate modernization to drive business priorities",
+        linkText: "Explore the case study",
+        href: "#",
+      },
+      {
+        title:
+          "Is your banking IT ready for real-time, data-driven growth?",
+        linkText: "View industry insights",
+        href: "#",
+      },
+    ],
+  },
+
+  /* ================= WHAT WE DO ================= */
+  whatWeDo: {
+    sectionMeta: {
+      id: "what-we-do",
+      eyebrow: "What we do",
+    },
+    heading:
+      "Modernizing banking platforms to drive growth, resilience, and trust",
     description:
-      "When a major bank committed to a cloud-first approach, Rapidcode migrated its core systems to help improve customers' digital banking experience.",
-    link: "#",
-  },
-  {
-    id: 2,
-    category: "Banking and Financial Markets",
-    title: "Innovate to deliver exceptional customer experience",
-    description:
-      "Rapidcode helped a Middle Eastern bank harness the power of its data to provide best-in-class experience and personalized offerings to its customers.",
-    link: "#",
-  },
-  {
-    id: 3,
-    category: "Banking and Financial Markets",
-    title: "Build a secure and resilient financial ecosystem",
-    description:
-      "Faced with a time-consuming and manual disaster recovery (DR) process, a national stock exchange sought the right tool to automate its DR operations.",
-    link: "#",
-  },
-]; 
-
-//hero
-
-import heroBg from "@/assets/hero-banking.jpg";
-
-export const bankingHeroData = {
-  industryLabel: "Banking and Financial Markets",
-
-  title: {
-    light: "Your clients",
-    bold: "are your future",
+      "We help banks, payments firms, and financial market institutions modernize IT platforms, unlock data value, and deliver secure, customer-centric digital experiences.",
+    video: {
+      enabled: false,
+      label: "",
+    },
   },
 
-  subtitle: {
-    line1: "Delight them with real-time,",
-    line2: "secure, and innovative experiences",
+  /* ================= HOW WE HELP ================= */
+  howWeHelp: {
+    sectionMeta: {
+      id: "how-we-help",
+      eyebrow: "How Rapidcode helps",
+      heading:
+        "Enabling secure, intelligent, and resilient financial ecosystems",
+    },
+    tabs: [
+      { id: "services", label: "Our services" },
+      { id: "difference", label: "The Rapidcode difference" },
+    ],
+    services: [
+      {
+        icon: Database,
+        title: "Core banking modernization and cloud transformation",
+        description:
+          "Modernize legacy core systems using cloud-first architectures to improve agility, scalability, and customer experience.",
+        href: "#",
+      },
+      {
+        icon: Lightbulb,
+        title: "Data, AI, and intelligent banking platforms",
+        description:
+          "Leverage AI, analytics, and alternative data to enable personalization, credit intelligence, and real-time decision-making.",
+        href: "#",
+      },
+      {
+        icon: Shield,
+        title: "Cybersecurity, risk, and regulatory compliance",
+        description:
+          "Strengthen security posture, automate compliance, and build resilience across banking and financial market operations.",
+        href: "#",
+      },
+    ],
+    differences: [
+      {
+        icon: Lightbulb,
+        title: "Deep BFSI and fintech expertise",
+        description:
+          "Proven experience across banking, payments, capital markets, and large-scale financial ecosystems.",
+      },
+      {
+        icon: Shield,
+        title: "Security- and compliance-first approach",
+        description:
+          "Platforms designed to meet regulatory, risk, and data protection requirements across regions.",
+      },
+    ],
   },
 
-  backgroundImage: heroBg,
-
-  defaultAccordionId: "overview",
-
-  accordionItems: [
-    {
-      id: "overview",
-      title: "Overview",
-      content:
-        "We help banking, payments, and financial markets leaders optimize their IT workloads for a superior customer experience.",
-    },
-    {
-      id: "modernizing",
-      title: "Modernizing Canara Bank's IT Operations",
-      content:
-        "Rapidcode is upgrading Canara Bank's end-to-end IT operations and improving their customer experience and availability.",
-      link: "#",
-    },
-    {
-      id: "innovating",
-      title:
-        "Innovating Grameen's microloan process and fueling economic growth",
-      content:
-        "Rapidcode established a single, integrated team to modernize the bank's IT operations and deliver faster, more accessible services to communities around rural India.",
-      link: "#",
-    },
-    {
-      id: "securing",
-      title:
-        "Securing and strengthening the ESAF bank's cybersecurity posture",
-      content:
-        "Rapidcode will enhance the bank's core IT infrastructure, power new digital banking capabilities, and provide risk and regulatory compliance support.",
-      link: "#",
-    },
-  ],
-};
-  
-// regulation 
-
-  export const bankingRegulationData = {
-  heading:
-    "Get regulation ready for today and tomorrow without doing the work of two",
-
-  subText:
-    "You don't need another you to get cybersecurity regulation ready.",
-
-  highlightText: "Double your impact with Rapidcode",
-
-  links: [
-    {
-      title: "Modernize to drive business priorities",
-      link: "#",
-    },
-    {
-      title: "Innovate for exceptional customer experience",
-      link: "#",
-    },
-    {
-      title: "Build a secure financial ecosystem",
-      link: "#",
-    },
-  ],
-};  
-  
-// marque 
-
-export const bankingMarqueeData = {
-  text:
-    "Download now — Explore emerging banking trends and opportunities with practical strategies — ",
-  repeatCount: 4, // future flexibility
-  bgClass: "bg-primary",
-  hoverBgClass: "hover:bg-primary/90",
-};
- 
-//statsSection 
-
-// statsData.js
-export const stats = [
-  {
-    number: "01",
-    highlight: "85% of executives",
-    description:
-      "agree that a better employee experience translates to a better customer experience and higher revenue.",
-    source: "IDC",
-    sourceLink: "#",
+  /* ================= CASE STUDIES ================= */
+  caseStudies: {
+    heading: "Banking and financial services success stories",
+    items: [
+      {
+        category: "Banking and Financial Markets",
+        title:
+          "Accelerate modernization to drive business priorities",
+        description:
+          "Migrated core banking systems to a cloud-first architecture to enhance digital customer experiences.",
+        link: "#",
+      },
+      {
+        category: "Banking and Financial Markets",
+        title:
+          "Innovate to deliver exceptional customer experience",
+        description:
+          "Enabled a Middle Eastern bank to unlock data intelligence for personalized, best-in-class customer offerings.",
+        link: "#",
+      },
+      {
+        category: "Banking and Financial Markets",
+        title:
+          "Build a secure and resilient financial ecosystem",
+        description:
+          "Automated disaster recovery operations for a national stock exchange to improve resilience and availability.",
+        link: "#",
+      },
+    ],
   },
-  {
-    number: "02",
-    highlight: "73% of CEOs",
-    description:
-      "say that deriving value from data is their top priority and is essential to remaining competitive.",
-    source: "Frost & Sullivan",
-    sourceLink: "#",
+
+  /* ================= REGULATION ================= */
+  regulation: {
+    heading:
+      "Get regulation-ready for today and tomorrow without doubling effort",
+    subText:
+      "Meet evolving cybersecurity and financial regulations with confidence and speed.",
+    highlightText: "Double your impact with Rapidcode",
+    links: [
+      { title: "Modernize to drive business priorities", href: "#" },
+      { title: "Innovate for exceptional customer experience", href: "#" },
+      { title: "Build a secure financial ecosystem", href: "#" },
+    ],
   },
-  {
-    number: "03",
-    highlight: "By 2025",
-    description:
-      "70% of CEOs will mandate resilience to survive threats from cybercrime, severe weather, and political instabilities.",
-    source: "Gartner",
-    sourceLink: "#",
-  },
-];
- 
-// ComplianceSection 
 
-// complianceData.js
-export const complianceContent = {
-  title: "Is your institution ready for regulatory compliance?",
-  paragraphs: [
-    "Regulatory compliance stands as a fundamental pillar for the BFSI sector, and as it faces stringent oversight from authorities worldwide, robust adherence to evolving regulations is quickly becoming a necessity.",
-    "Many enterprises are embracing a shift-left compliance strategy to operate within legal and ethical boundaries while safeguarding market integrity and consumer trust.",
-    "Rapidcode’s Regional Regulatory Compliance Consulting and Services leverage AI-driven compliance capabilities to help BFSI organizations reduce errors and inefficiencies through real-time monitoring, automated regulatory reporting, and advanced risk detection.",
-  ],
-};
-
-//ExpertData 
-
-// expertData.js
-import expertPortrait from "@/assets/expert-portrait.jpg";
-
-export const expertSectionData = {
-  tag: "industry experts",
-  heading: "Our experts, your challenges",
-  introText:
-    "Read the Q&A with Rapidcode expert, Jayakrishnan Rajagopalan",
-
-  qas: [
+  /* ================= STATS ================= */
+  stats: [
     {
-      question:
-        "How can we tackle the key challenges of financial inclusion and rural penetration for every bank and financial services organisation in India?",
-      answer:
-        "For fintech particularly, digital public infrastructure and innovative business solutions are essential for tackling financial inclusion and rural penetration effectively. Furthermore, the design and integration of voice and vernacular interfaces into products and services helps deliver substantial value and should be prioritized.",
+      highlight: "85% of executives",
+      description:
+        "say better employee experience leads to improved customer experience and higher revenue.",
+      source: "IDC",
     },
     {
-      question:
-        "Non-performing assets (NPAs) and Credit Risk with legacy tech modernisation are things that every financial institution is facing today. What insights can you offer to enterprises trying to overcome them?",
-      answer:
-        "In legacy modernization, systematically dismantling the core allows institutions to address their technical debt and establish a suitable timeline for the modernization program. The implementation of AI and machine learning-based deep learning models serves as the foundation for creating Early Warning Systems (EWS), AI-powered credit scoring using alternative data sets, and digital platforms for collections. Additionally, tracking NPA resolutions helps to continually reduce friction across the entire credit risk ecosystem.",
+      highlight: "73% of CEOs",
+      description:
+        "state that deriving value from data is essential to remain competitive.",
+      source: "Frost & Sullivan",
+    },
+    {
+      highlight: "By 2025",
+      description:
+        "70% of CEOs will mandate resilience to address cyber, climate, and geopolitical risks.",
+      source: "Gartner",
     },
   ],
 
-  expert: {
-    name: "Jayakrishnan Rajagopalan",
-    designation: "Chief Architect",
-    domain: "BFSI in Enterprise Architecture",
-    company: "Rapidcode India",
-    image: expertPortrait,
+  /* ================= FAQ ================= */
+  faqs: {
+    sectionMeta: {
+      heading: "You have questions. We have answers.",
+    },
+    items: [
+      {
+        question:
+          "How can banks modernize legacy systems without disrupting operations?",
+        answer:
+          "A phased modernization strategy allows institutions to reduce technical debt while maintaining availability, security, and regulatory compliance.",
+      },
+      {
+        question:
+          "How can AI help manage NPAs and credit risk?",
+        answer:
+          "AI-powered early warning systems, alternative data-based credit scoring, and predictive analytics help proactively manage risk and improve portfolio performance.",
+      },
+    ],
   },
-};
- 
-//InsightData
 
-// insightsData.js
-import insightAi from "@/assets/insight-ai.jpg";
-import insightFintech from "@/assets/insight-fintech.jpg";
-import insightBusiness from "@/assets/insight-business.jpg";
-import insightSecurity from "@/assets/insight-security.jpg";
-
-export const insightsSectionData = {
-  heading: "Latest Insights from banking experts",
-
-  insights: [
-    {
-      image: insightAi,
-      category: "Rapidcode Institute",
-      title: "Agentic AI and the future of financial services",
-      meta: "Article | Sep 30, 2025 | Read time: 14 min",
-      link: "#",
-    },
-    {
-      image: insightFintech,
-      category: "Rapidcode Institute",
-      title:
-        "Navigating the emerging technology terrain shaping the future of finance",
-      meta: "Article | Sep 30, 2025 | Read time: 7 min",
-      link: "#",
-    },
-    {
-      image: insightBusiness,
-      category: "Data and AI",
-      title:
-        "4 disruptive tech trends that will define the future of banking",
-      meta: "Article | Sep 13, 2024 | Read time: 4 min",
-      link: "#",
-    },
-    {
-      image: insightSecurity,
-      category: "Cyber resilience",
-      title:
-        "Taking cybersecurity from an IT issue to a strategic business imperative",
-      meta: "Podcast | May 1, 2024",
-      link: "#",
-    },
-  ],
-};
-
- //Resourcesdata 
-
- import resourceTrends from "@/assets/resource-trends.jpg";
-import resourceReadiness from "@/assets/resource-readiness.jpg";
-
-export const resources = [
-  {
-    image: resourceTrends,
-    title: "Explore emerging banking trends and practical strategies",
-    meta: "Banking Recommendation Paper | Sep 2025",
+  /* ================= CTA ================= */
+  cta: {
+    heading: "Take the next step",
     link: "#",
+    marqueeText:
+      "Connect — with an expert to discuss your Banking & Financial Services IT Transformation — ",
+    repeatCount: 4,
   },
-  {
-    image: resourceReadiness,
-    title: "Identify your readiness tipping point",
-    meta: "The Rapidcode Readiness Financial Services Report 2025 | PDF",
-    link: "#",
-  },
-];
-
-//CTAsection 
-
-export const ctaData = {
-  heading: "Take the next step",
-  link: "#",
-  marqueeText: "Connect — with an expert to discuss your IT Transformation — ",
-  repeatCount: 4,
 };
-
-
-

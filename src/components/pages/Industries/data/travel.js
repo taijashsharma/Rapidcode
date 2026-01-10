@@ -1,286 +1,190 @@
-// ==============================
-// TRAVEL – CASE STUDIES
-// ==============================
+import { Plane, ShieldCheck, Lightbulb } from "lucide-react";
 
-export const travelCaseStudies = [
-  {
-    id: 1,
-    category: "Travel",
-    title: "Accelerate digital journeys at global scale",
+export const travelPage = {
+  /* ================= HERO ================= */
+  hero: {
+    breadcrumb: {
+      label: "Industries",
+      href: "#",
+    },
+    title: "Travel",
+    subtitle:
+      "Delivering connected, secure, and personalized travel experiences at global scale",
+    backgroundImage: "/assets/hero-travel.jpg",
+    cards: [
+      {
+        title:
+          "Accelerate digital journeys with modern travel platforms",
+        linkText: "Explore case studies",
+        href: "#",
+      },
+      {
+        title:
+          "Is your travel ecosystem ready for disruption and demand volatility?",
+        linkText: "View industry insights",
+        href: "#",
+      },
+    ],
+  },
+
+  /* ================= WHAT WE DO ================= */
+  whatWeDo: {
+    sectionMeta: {
+      id: "what-we-do",
+      eyebrow: "What we do",
+    },
+    heading:
+      "Modernizing travel technology to power seamless journeys",
     description:
-      "When a leading travel enterprise adopted a digital-first strategy, Rapidcode modernized its core platforms to improve speed, personalization, and traveler engagement.",
-    link: "#",
-  },
-  {
-    id: 2,
-    category: "Travel",
-    title: "Create seamless, data-driven travel experiences",
-    description:
-      "Rapidcode helped a global travel brand unlock real-time data to deliver personalized experiences and optimize end-to-end customer journeys.",
-    link: "#",
-  },
-  {
-    id: 3,
-    category: "Travel",
-    title: "Build resilient, always-on travel ecosystems",
-    description:
-      "Facing operational disruptions and demand volatility, a travel organization partnered with Rapidcode to automate recovery and ensure uninterrupted services.",
-    link: "#",
-  },
-];
-
-// ==============================
-// HERO SECTION
-// ==============================
-
-import heroBg from "@/assets/hero-travel.jpg";
-
-export const travelHeroData = {
-  industryLabel: "Travel",
-
-  title: {
-    light: "Every journey",
-    bold: "begins with trust",
+      "We help travel and hospitality organizations modernize platforms, unlock data-driven experiences, and scale resilient operations across global ecosystems.",
+    video: {
+      enabled: false,
+      label: "",
+    },
   },
 
-  subtitle: {
-    line1: "Deliver connected, secure,",
-    line2: "and personalized travel experiences",
+  /* ================= HOW WE HELP ================= */
+  howWeHelp: {
+    sectionMeta: {
+      id: "how-we-help",
+      eyebrow: "How Rapidcode helps",
+      heading:
+        "Enabling agility, personalization, and resilience in travel enterprises",
+    },
+    tabs: [
+      { id: "services", label: "Our services" },
+      { id: "difference", label: "The Rapidcode difference" },
+    ],
+
+    services: [
+      {
+        icon: Plane,
+        title: "Travel platform and ecosystem modernization",
+        description:
+          "Upgrade legacy travel systems to cloud-native platforms that improve performance, scalability, and availability.",
+        href: "#",
+      },
+      {
+        icon: Plane,
+        title: "Data-driven traveler experiences",
+        description:
+          "Activate real-time data across booking, loyalty, and operations to deliver personalized, connected journeys.",
+        href: "#",
+      },
+      {
+        icon: ShieldCheck,
+        title: "Resilience, security, and continuity",
+        description:
+          "Ensure cyber resilience, automated recovery, and uninterrupted service delivery in high-demand travel environments.",
+        href: "#",
+      },
+    ],
+
+    differences: [
+      {
+        icon: Lightbulb,
+        title: "Deep travel and hospitality expertise",
+        description:
+          "Experience across airlines, hospitality, travel platforms, and global travel ecosystems.",
+      },
+      {
+        icon: ShieldCheck,
+        title: "Built for trust, compliance, and uptime",
+        description:
+          "Secure-by-design architectures that protect traveler data and ensure operational continuity.",
+      },
+    ],
   },
 
-  backgroundImage: heroBg,
-
-  defaultAccordionId: "overview",
-
-  accordionItems: [
+  /* ================= STATS ================= */
+  stats: [
     {
-      id: "overview",
-      title: "Overview",
-      content:
-        "We help travel and hospitality organizations modernize platforms, enhance customer experiences, and scale operations with resilience.",
+      number: "89%",
+      label:
+        "of travel leaders say digital experience is the primary driver of customer loyalty",
+      source: "IDC",
     },
     {
-      id: "modernizing",
-      title: "Modernizing travel technology platforms",
-      content:
-        "Rapidcode upgrades core travel systems to improve agility, availability, and performance across global operations.",
-      link: "#",
+      number: "76%",
+      label:
+        "of executives believe real-time data is critical to demand management and personalization",
+      source: "McKinsey",
     },
     {
-      id: "innovating",
-      title: "Innovating traveler experiences with data",
-      content:
-        "Rapidcode builds integrated teams to modernize legacy platforms and enable real-time insights across booking, loyalty, and operations.",
-      link: "#",
-    },
-    {
-      id: "securing",
-      title: "Securing and stabilizing travel ecosystems",
-      content:
-        "Rapidcode strengthens digital foundations, enhances cyber resilience, and ensures business continuity in high-demand environments.",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// REGULATION SECTION
-// ==============================
-
-export const travelRegulationData = {
-  heading:
-    "Meet regulatory demands while moving travelers forward",
-
-  subText:
-    "Compliance shouldn’t slow the pace of travel innovation.",
-
-  highlightText: "Operate with confidence using Rapidcode",
-
-  links: [
-    {
-      title: "Modernize travel platforms",
-      link: "#",
-    },
-    {
-      title: "Innovate traveler experiences",
-      link: "#",
-    },
-    {
-      title: "Build resilient travel ecosystems",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// MARQUEE SECTION
-// ==============================
-
-export const travelMarqueeData = {
-  text:
-    "Download now — Explore digital transformation trends in travel — ",
-  repeatCount: 4,
-  bgClass: "bg-primary",
-  hoverBgClass: "hover:bg-primary/90",
-};
-
-// ==============================
-// STATS SECTION
-// ==============================
-
-export const stats = [
-  {
-    number: "01",
-    highlight: "89% of travel leaders",
-    description:
-      "say digital experience is the primary driver of customer loyalty and repeat bookings.",
-    source: "IDC",
-    sourceLink: "#",
-  },
-  {
-    number: "02",
-    highlight: "76% of executives",
-    description:
-      "believe real-time data is critical to managing demand and personalization.",
-    source: "McKinsey",
-    sourceLink: "#",
-  },
-  {
-    number: "03",
-    highlight: "By 2026",
-    description:
-      "71% of travel enterprises will prioritize resilience to manage disruptions and volatility.",
-    source: "Gartner",
-    sourceLink: "#",
-  },
-];
-
-// ==============================
-// COMPLIANCE SECTION
-// ==============================
-
-export const complianceContent = {
-  title: "Is your travel organization compliance-ready?",
-  paragraphs: [
-    "Travel organizations operate across borders and regulations, making compliance a critical business requirement.",
-    "Leading enterprises embed compliance early into digital journeys to protect customer data and maintain trust.",
-    "Rapidcode’s Regulatory Compliance Consulting Services use AI-driven capabilities to enable continuous monitoring, automated reporting, and proactive risk management.",
-  ],
-};
-
-// ==============================
-// EXPERT SECTION
-// ==============================
-
-import expertPortrait from "@/assets/expert-portrait.jpg";
-
-export const expertSectionData = {
-  tag: "industry experts",
-  heading: "Our experts, your travel challenges",
-  introText:
-    "Read the Q&A with Rapidcode expert, Jayakrishnan Rajagopalan",
-
-  qas: [
-    {
-      question:
-        "What are the biggest digital challenges in the travel industry today?",
-      answer:
-        "Travel organizations must deliver seamless experiences while managing demand fluctuations, legacy systems, and increasing cybersecurity risks.",
-    },
-    {
-      question:
-        "How can travel enterprises improve resilience and agility?",
-      answer:
-        "Modernizing core systems, adopting cloud-native platforms, and using real-time analytics help organizations respond faster to disruption and demand changes.",
+      number: "71%",
+      label:
+        "of travel enterprises will prioritize resilience by 2026",
+      source: "Gartner",
     },
   ],
 
-  expert: {
-    name: "Jayakrishnan Rajagopalan",
-    designation: "Chief Architect",
-    domain: "Travel & Hospitality Enterprise Architecture",
-    company: "Rapidcode India",
-    image: expertPortrait,
+  /* ================= INSIGHTS ================= */
+  insights: {
+    heading: "Latest insights from travel industry experts",
+    items: [
+      {
+        category: "Rapidcode Institute",
+        title: "AI-driven personalization in travel experiences",
+        meta: "Article | Sep 30, 2025 | 14 min read",
+        href: "#",
+      },
+      {
+        category: "Digital Platforms",
+        title:
+          "How digital platforms are reshaping the travel industry",
+        meta: "Article | Sep 30, 2025 | 7 min read",
+        href: "#",
+      },
+      {
+        category: "Cyber resilience",
+        title:
+          "Why cyber resilience is critical for travel platforms",
+        meta: "Podcast | May 1, 2024",
+        href: "#",
+      },
+    ],
   },
-};
 
-// ==============================
-// INSIGHTS SECTION
-// ==============================
-
-import insightAi from "@/assets/insight-ai.jpg";
-import insightFintech from "@/assets/insight-fintech.jpg";
-import insightBusiness from "@/assets/insight-business.jpg";
-import insightSecurity from "@/assets/insight-security.jpg";
-
-export const insightsSectionData = {
-  heading: "Latest insights from travel industry experts",
-
-  insights: [
+  /* ================= RESOURCES ================= */
+  resources: [
     {
-      image: insightAi,
-      category: "Rapidcode Institute",
-      title: "AI-driven personalization in travel experiences",
-      meta: "Article | Sep 30, 2025 | Read time: 14 min",
-      link: "#",
+      title: "Explore travel industry trends and strategies",
+      meta: "Travel Industry Recommendation Paper | Sep 2025",
+      href: "#",
     },
     {
-      image: insightFintech,
-      category: "Rapidcode Institute",
-      title:
-        "How digital platforms are reshaping the travel industry",
-      meta: "Article | Sep 30, 2025 | Read time: 7 min",
-      link: "#",
-    },
-    {
-      image: insightBusiness,
-      category: "Data and AI",
-      title:
-        "Four technology trends redefining travel enterprises",
-      meta: "Article | Sep 13, 2024 | Read time: 4 min",
-      link: "#",
-    },
-    {
-      image: insightSecurity,
-      category: "Cyber resilience",
-      title:
-        "Why cyber resilience is critical for travel platforms",
-      meta: "Podcast | May 1, 2024",
-      link: "#",
+      title: "Identify your travel readiness tipping point",
+      meta: "Rapidcode Travel Readiness Report 2025 | PDF",
+      href: "#",
     },
   ],
-};
 
-// ==============================
-// RESOURCES SECTION
-// ==============================
-
-import resourceTrends from "@/assets/resource-trends.jpg";
-import resourceReadiness from "@/assets/resource-readiness.jpg";
-
-export const resources = [
-  {
-    image: resourceTrends,
-    title: "Explore travel industry trends and strategies",
-    meta: "Travel Industry Recommendation Paper | Sep 2025",
-    link: "#",
+  /* ================= FAQ ================= */
+  faqs: {
+    sectionMeta: {
+      heading: "You have questions. We have answers.",
+    },
+    items: [
+      {
+        question:
+          "What are the biggest digital challenges in the travel industry?",
+        answer:
+          "Travel organizations must balance seamless customer experiences with demand volatility, legacy systems, cybersecurity risks, and regulatory complexity.",
+      },
+      {
+        question:
+          "How can travel enterprises improve agility and resilience?",
+        answer:
+          "Modernizing core systems, adopting cloud-native platforms, and using real-time analytics enables faster response to disruption and changing demand.",
+      },
+    ],
   },
-  {
-    image: resourceReadiness,
-    title: "Identify your travel readiness tipping point",
-    meta: "The Rapidcode Travel Readiness Report 2025 | PDF",
-    link: "#",
+
+  /* ================= CTA ================= */
+  cta: {
+    heading: "Take the next step",
+    marqueeText:
+      "Connect — with an expert to discuss your Travel Transformation — ",
+    href: "#",
   },
-];
-
-// ==============================
-// CTA SECTION
-// ==============================
-
-export const ctaData = {
-  heading: "Take the next step",
-  link: "#",
-  marqueeText:
-    "Connect — with an expert to discuss your Travel Transformation — ",
-  repeatCount: 4,
 };

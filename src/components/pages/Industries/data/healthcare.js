@@ -1,288 +1,207 @@
-// ==============================
-// HEALTHCARE – CASE STUDIES
-// ==============================
+import { Database, Shield, HeartPulse } from "lucide-react";
 
-export const healthcareCaseStudies = [
-  {
-    id: 1,
-    category: "Healthcare",
-    title: "Accelerate modernization to improve patient outcomes",
+/* ==============================
+   HEALTHCARE PAGE
+================================ */
+
+export const healthcarePage = {
+  /* ================= HERO ================= */
+  hero: {
+    breadcrumb: {
+      label: "Industries",
+      href: "#",
+    },
+    title: "Healthcare",
+    subtitle:
+      "Delivering better patient outcomes through intelligent, secure, and connected digital platforms",
+    backgroundImage: "/assets/hero-healthcare.jpg",
+    cards: [
+      {
+        title:
+          "Accelerate modernization to improve patient outcomes",
+        linkText: "Explore the case study",
+        href: "#",
+      },
+      {
+        title:
+          "Is your healthcare IT ready for secure, connected care?",
+        linkText: "View industry insights",
+        href: "#",
+      },
+    ],
+  },
+
+  /* ================= WHAT WE DO ================= */
+  whatWeDo: {
+    sectionMeta: {
+      id: "what-we-do",
+      eyebrow: "What we do",
+    },
+    heading:
+      "Modernizing healthcare platforms for connected, patient-centric care",
     description:
-      "When a leading healthcare organization adopted a cloud-first strategy, Rapidcode modernized core platforms to enhance care delivery, operational efficiency, and clinical collaboration.",
-    link: "#",
-  },
-  {
-    id: 2,
-    category: "Healthcare",
-    title: "Innovate to deliver connected patient experiences",
-    description:
-      "Rapidcode helped a global healthcare provider harness data-driven intelligence to enable personalized care, improve engagement, and optimize clinical workflows.",
-    link: "#",
-  },
-  {
-    id: 3,
-    category: "Healthcare",
-    title: "Build a secure and resilient healthcare ecosystem",
-    description:
-      "Facing manual and fragmented recovery processes, a large healthcare network partnered with Rapidcode to automate disaster recovery and strengthen system resilience.",
-    link: "#",
-  },
-];
-
-// ==============================
-// HERO SECTION
-// ==============================
-
-import heroBg from "@/assets/hero-healthcare.jpg";
-
-export const healthcareHeroData = {
-  industryLabel: "Healthcare",
-
-  title: {
-    light: "Your care",
-    bold: "shapes lives",
+      "We help healthcare organizations modernize IT and digital platforms to improve care delivery, strengthen clinical collaboration, and enhance operational efficiency.",
+    video: {
+      enabled: false,
+      label: "",
+    },
   },
 
-  subtitle: {
-    line1: "Deliver it through intelligent,",
-    line2: "secure, and connected digital platforms",
+  /* ================= HOW WE HELP ================= */
+  howWeHelp: {
+    sectionMeta: {
+      id: "how-we-help",
+      eyebrow: "How Rapidcode helps",
+      heading:
+        "Building secure, interoperable, and resilient healthcare ecosystems",
+    },
+    tabs: [
+      { id: "services", label: "Our services" },
+      { id: "difference", label: "The Rapidcode difference" },
+    ],
+    services: [
+      {
+        icon: Database,
+        title: "Healthcare IT modernization and cloud transformation",
+        description:
+          "Modernize clinical and administrative platforms using cloud-first architectures to improve availability, scalability, and care continuity.",
+        href: "#",
+      },
+      {
+        icon: HeartPulse,
+        title: "Data, AI, and connected care platforms",
+        description:
+          "Enable personalized, data-driven care delivery and real-time clinical insights using advanced analytics and AI.",
+        href: "#",
+      },
+      {
+        icon: Shield,
+        title: "Cybersecurity, compliance, and healthcare resilience",
+        description:
+          "Protect sensitive patient data and critical systems with security-first architectures, compliance automation, and disaster recovery.",
+        href: "#",
+      },
+    ],
+    differences: [
+      {
+        icon: HeartPulse,
+        title: "Deep healthcare domain expertise",
+        description:
+          "Experience across providers, payers, clinical systems, and regulated healthcare environments.",
+      },
+      {
+        icon: Shield,
+        title: "Privacy- and compliance-first foundations",
+        description:
+          "Platforms designed to meet global healthcare regulations and patient data protection requirements.",
+      },
+    ],
   },
 
-  backgroundImage: heroBg,
-
-  defaultAccordionId: "overview",
-
-  accordionItems: [
-    {
-      id: "overview",
-      title: "Overview",
-      content:
-        "We help healthcare leaders modernize IT and digital platforms to improve patient outcomes, operational efficiency, and care continuity.",
-    },
-    {
-      id: "modernizing",
-      title: "Modernizing healthcare IT for clinical excellence",
-      content:
-        "Rapidcode is transforming end-to-end IT operations for healthcare organizations to improve availability, performance, and care delivery.",
-      link: "#",
-    },
-    {
-      id: "innovating",
-      title:
-        "Innovating digital care delivery and patient engagement",
-      content:
-        "Rapidcode built integrated teams to modernize legacy systems and enable real-time, data-driven decision-making across clinical and administrative workflows.",
-      link: "#",
-    },
-    {
-      id: "securing",
-      title:
-        "Securing and strengthening healthcare digital platforms",
-      content:
-        "Rapidcode enhances core healthcare IT systems, enables advanced digital capabilities, and supports compliance across global healthcare regulations.",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// REGULATION SECTION
-// ==============================
-
-export const healthcareRegulationData = {
-  heading:
-    "Stay regulation-ready while advancing healthcare innovation",
-
-  subText:
-    "You don’t need to double effort to meet evolving healthcare regulations.",
-
-  highlightText: "Expand impact with Rapidcode",
-
-  links: [
-    {
-      title: "Modernize to support care priorities",
-      link: "#",
-    },
-    {
-      title: "Innovate for connected patient experiences",
-      link: "#",
-    },
-    {
-      title: "Build a secure healthcare ecosystem",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// MARQUEE SECTION
-// ==============================
-
-export const healthcareMarqueeData = {
-  text:
-    "Download now — Explore emerging healthcare trends and strategies — ",
-  repeatCount: 4,
-  bgClass: "bg-primary",
-  hoverBgClass: "hover:bg-primary/90",
-};
-
-// ==============================
-// STATS SECTION
-// ==============================
-
-export const stats = [
-  {
-    number: "01",
-    highlight: "91% of healthcare leaders",
-    description:
-      "agree that digital transformation directly improves patient experience and quality of care.",
-    source: "IDC",
-    sourceLink: "#",
+  /* ================= CASE STUDIES ================= */
+  caseStudies: {
+    heading: "Healthcare transformation success stories",
+    items: [
+      {
+        category: "Healthcare",
+        title:
+          "Accelerate modernization to improve patient outcomes",
+        description:
+          "Modernized core platforms for a leading healthcare organization to enhance care delivery, efficiency, and clinical collaboration.",
+        link: "#",
+      },
+      {
+        category: "Healthcare",
+        title:
+          "Innovate to deliver connected patient experiences",
+        description:
+          "Enabled data-driven intelligence to support personalized care, patient engagement, and optimized clinical workflows.",
+        link: "#",
+      },
+      {
+        category: "Healthcare",
+        title:
+          "Build a secure and resilient healthcare ecosystem",
+        description:
+          "Automated disaster recovery and strengthened system resilience for a large healthcare network.",
+        link: "#",
+      },
+    ],
   },
-  {
-    number: "02",
-    highlight: "79% of executives",
-    description:
-      "say that data-driven insights are critical to improving clinical and operational outcomes.",
-    source: "Frost & Sullivan",
-    sourceLink: "#",
+
+  /* ================= REGULATION ================= */
+  regulation: {
+    heading:
+      "Stay regulation-ready while advancing healthcare innovation",
+    subText:
+      "Meet evolving healthcare regulations without slowing care delivery or innovation.",
+    highlightText: "Expand impact with Rapidcode",
+    links: [
+      {
+        title: "Modernize to support care priorities",
+        href: "#",
+      },
+      {
+        title:
+          "Innovate for connected patient experiences",
+        href: "#",
+      },
+      {
+        title: "Build a secure healthcare ecosystem",
+        href: "#",
+      },
+    ],
   },
-  {
-    number: "03",
-    highlight: "By 2026",
-    description:
-      "75% of healthcare organizations will prioritize resilience to address cyber risks and system disruptions.",
-    source: "Gartner",
-    sourceLink: "#",
-  },
-];
 
-// ==============================
-// COMPLIANCE SECTION
-// ==============================
-
-export const complianceContent = {
-  title: "Is your healthcare organization compliance-ready?",
-  paragraphs: [
-    "Regulatory compliance is a fundamental requirement in healthcare as data privacy, patient safety, and clinical regulations continue to intensify worldwide.",
-    "Many healthcare organizations are adopting shift-left compliance strategies to ensure care continuity while protecting patient trust and sensitive data.",
-    "Rapidcode’s Regulatory Compliance Consulting Services leverage AI-driven capabilities to reduce risk through continuous monitoring, automated compliance reporting, and advanced threat detection.",
-  ],
-};
-
-// ==============================
-// EXPERT SECTION
-// ==============================
-
-import expertPortrait from "@/assets/expert-portrait.jpg";
-
-export const expertSectionData = {
-  tag: "industry experts",
-  heading: "Our experts, your healthcare challenges",
-  introText:
-    "Read the Q&A with Rapidcode expert, Jayakrishnan Rajagopalan",
-
-  qas: [
+  /* ================= STATS ================= */
+  stats: [
     {
-      question:
-        "What are the key digital challenges facing healthcare organizations today?",
-      answer:
-        "Healthcare organizations must balance patient outcomes, data security, and operational efficiency while modernizing complex clinical and administrative systems.",
+      highlight: "91% of healthcare leaders",
+      description:
+        "agree that digital transformation directly improves patient experience and quality of care.",
+      source: "IDC",
     },
     {
-      question:
-        "How can legacy platforms and compliance risks be effectively addressed?",
-      answer:
-        "A phased modernization approach reduces technical debt while ensuring continuity. AI-driven analytics, interoperability platforms, and real-time monitoring strengthen care delivery and compliance.",
+      highlight: "79% of executives",
+      description:
+        "say data-driven insights are critical to improving clinical and operational outcomes.",
+      source: "Frost & Sullivan",
+    },
+    {
+      highlight: "By 2026",
+      description:
+        "75% of healthcare organizations will prioritize resilience to address cyber risks and system disruptions.",
+      source: "Gartner",
     },
   ],
 
-  expert: {
-    name: "Jayakrishnan Rajagopalan",
-    designation: "Chief Architect",
-    domain: "Healthcare Enterprise Architecture",
-    company: "Rapidcode India",
-    image: expertPortrait,
+  /* ================= FAQ ================= */
+  faqs: {
+    sectionMeta: {
+      heading: "You have questions. We have answers.",
+    },
+    items: [
+      {
+        question:
+          "What are the key digital challenges facing healthcare organizations today?",
+        answer:
+          "Healthcare organizations must balance patient outcomes, data security, and operational efficiency while modernizing complex clinical and administrative systems.",
+      },
+      {
+        question:
+          "How can legacy platforms and compliance risks be addressed effectively?",
+        answer:
+          "A phased modernization approach combined with AI-driven analytics, interoperability platforms, and real-time monitoring strengthens care delivery and regulatory compliance.",
+      },
+    ],
   },
-};
 
-// ==============================
-// INSIGHTS SECTION
-// ==============================
-
-import insightAi from "@/assets/insight-ai.jpg";
-import insightFintech from "@/assets/insight-fintech.jpg";
-import insightBusiness from "@/assets/insight-business.jpg";
-import insightSecurity from "@/assets/insight-security.jpg";
-
-export const insightsSectionData = {
-  heading: "Latest insights from healthcare industry experts",
-
-  insights: [
-    {
-      image: insightAi,
-      category: "Rapidcode Institute",
-      title: "AI-driven platforms shaping the future of healthcare",
-      meta: "Article | Sep 30, 2025 | Read time: 14 min",
-      link: "#",
-    },
-    {
-      image: insightFintech,
-      category: "Rapidcode Institute",
-      title:
-        "Digital technologies transforming healthcare delivery models",
-      meta: "Article | Sep 30, 2025 | Read time: 7 min",
-      link: "#",
-    },
-    {
-      image: insightBusiness,
-      category: "Data and AI",
-      title:
-        "4 technology trends redefining modern healthcare",
-      meta: "Article | Sep 13, 2024 | Read time: 4 min",
-      link: "#",
-    },
-    {
-      image: insightSecurity,
-      category: "Cyber resilience",
-      title:
-        "Why cybersecurity is now critical for healthcare providers",
-      meta: "Podcast | May 1, 2024",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// RESOURCES SECTION
-// ==============================
-
-import resourceTrends from "@/assets/resource-trends.jpg";
-import resourceReadiness from "@/assets/resource-readiness.jpg";
-
-export const resources = [
-  {
-    image: resourceTrends,
-    title: "Explore emerging healthcare trends and proven strategies",
-    meta: "Healthcare Industry Recommendation Paper | Sep 2025",
+  /* ================= CTA ================= */
+  cta: {
+    heading: "Take the next step",
     link: "#",
+    marqueeText:
+      "Connect — with an expert to discuss your Healthcare IT Transformation — ",
+    repeatCount: 4,
   },
-  {
-    image: resourceReadiness,
-    title: "Identify your healthcare readiness tipping point",
-    meta: "The Rapidcode Healthcare Readiness Report 2025 | PDF",
-    link: "#",
-  },
-];
-
-// ==============================
-// CTA SECTION
-// ==============================
-
-export const ctaData = {
-  heading: "Take the next step",
-  link: "#",
-  marqueeText:
-    "Connect — with an expert to discuss your Healthcare IT Transformation — ",
-  repeatCount: 4,
 };

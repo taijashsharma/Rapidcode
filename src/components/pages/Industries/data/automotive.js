@@ -1,288 +1,197 @@
-// ==============================
-// AUTOMOTIVE – CASE STUDIES
-// ==============================
+import { Database, Shield, Lightbulb } from "lucide-react";
 
-export const automotiveCaseStudies = [
-  {
-    id: 1,
-    category: "Automotive",
-    title: "Accelerate modernization to drive next-gen mobility",
+/* ==============================
+   AUTOMOTIVE PAGE DATA
+================================ */
+
+export const automotivePage = {
+  /* ================= HERO ================= */
+  hero: {
+    breadcrumb: {
+      label: "Industries",
+      href: "#",
+    },
+    title: "Automotive",
+    subtitle:
+      "Powering next-generation mobility with intelligent, connected, and secure digital platforms",
+    backgroundImage: "/assets/hero-automotive.jpg",
+    cards: [
+      {
+        title:
+          "Accelerate modernization to drive next-gen mobility",
+        linkText: "Explore the case study",
+        href: "#",
+      },
+      {
+        title:
+          "Is your automotive IT ready for connected and electric vehicles?",
+        linkText: "View industry insights",
+        href: "#",
+      },
+    ],
+  },
+
+  /* ================= WHAT WE DO ================= */
+  whatWeDo: {
+    sectionMeta: {
+      id: "what-we-do",
+      eyebrow: "What we do",
+    },
+    heading:
+      "Driving automotive innovation through digital and platform modernization",
     description:
-      "When a leading automotive manufacturer adopted a cloud-first strategy, Rapidcode modernized core platforms to improve agility across connected and electric vehicle programs.",
-    link: "#",
-  },
-  {
-    id: 2,
-    category: "Automotive",
-    title: "Innovate to deliver superior driver experience",
-    description:
-      "Rapidcode helped a global automotive brand unlock the power of its data to enable intelligent, personalized, and connected mobility experiences.",
-    link: "#",
-  },
-  {
-    id: 3,
-    category: "Automotive",
-    title: "Build a secure and resilient automotive ecosystem",
-    description:
-      "Facing complex and manual recovery processes, a large automotive enterprise partnered with Rapidcode to automate disaster recovery and strengthen operational resilience.",
-    link: "#",
-  },
-];
-
-// ==============================
-// HERO SECTION
-// ==============================
-
-import heroBg from "@/assets/hero-automotive.jpg";
-
-export const automotiveHeroData = {
-  industryLabel: "Automotive",
-
-  title: {
-    light: "Your vehicles",
-    bold: "define tomorrow",
+      "We help automotive enterprises modernize IT and digital platforms to accelerate innovation, enhance driver experience, and support connected, electric, and autonomous mobility.",
+    video: {
+      enabled: false,
+      label: "",
+    },
   },
 
-  subtitle: {
-    line1: "Power them with intelligent,",
-    line2: "connected, and secure digital platforms",
+  /* ================= HOW WE HELP ================= */
+  howWeHelp: {
+    sectionMeta: {
+      id: "how-we-help",
+      eyebrow: "How Rapidcode helps",
+      heading:
+        "Enabling scalable mobility platforms, intelligence, and resilience",
+    },
+    tabs: [
+      { id: "services", label: "Our services" },
+      { id: "difference", label: "The Rapidcode difference" },
+    ],
+    services: [
+      {
+        icon: Database,
+        title: "Automotive IT and platform modernization",
+        description:
+          "Modernize legacy automotive systems using cloud-first and platform-led approaches to improve agility and speed to market.",
+        href: "#",
+      },
+      {
+        icon: Lightbulb,
+        title: "Data, AI, and connected mobility intelligence",
+        description:
+          "Enable intelligent, personalized, and connected vehicle experiences through advanced analytics and AI-driven platforms.",
+        href: "#",
+      },
+      {
+        icon: Shield,
+        title: "Cybersecurity and operational resilience",
+        description:
+          "Protect automotive digital ecosystems with secure architectures, automated recovery, and compliance across global markets.",
+        href: "#",
+      },
+    ],
+    differences: [
+      {
+        icon: Lightbulb,
+        title: "Deep automotive and mobility expertise",
+        description:
+          "Proven experience across connected vehicles, EV platforms, and complex automotive ecosystems.",
+      },
+      {
+        icon: Shield,
+        title: "Secure-by-design automotive platforms",
+        description:
+          "Digital foundations built for safety, compliance, cyber resilience, and long-term scalability.",
+      },
+    ],
   },
 
-  backgroundImage: heroBg,
-
-  defaultAccordionId: "overview",
-
-  accordionItems: [
-    {
-      id: "overview",
-      title: "Overview",
-      content:
-        "We help automotive leaders optimize IT and digital platforms to accelerate innovation, efficiency, and mobility transformation.",
-    },
-    {
-      id: "modernizing",
-      title: "Modernizing automotive IT for scalable growth",
-      content:
-        "Rapidcode is transforming end-to-end IT operations for automotive enterprises to improve availability, performance, and speed to market.",
-      link: "#",
-    },
-    {
-      id: "innovating",
-      title:
-        "Innovating connected, electric, and autonomous mobility",
-      content:
-        "Rapidcode built integrated delivery teams to modernize legacy systems and enable data-driven decision-making across EV and connected vehicle programs.",
-      link: "#",
-    },
-    {
-      id: "securing",
-      title:
-        "Securing and strengthening automotive digital platforms",
-      content:
-        "Rapidcode enhances core automotive IT systems, enables advanced digital capabilities, and supports compliance across global markets.",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// REGULATION SECTION
-// ==============================
-
-export const automotiveRegulationData = {
-  heading:
-    "Stay regulation-ready while accelerating automotive innovation",
-
-  subText:
-    "You don’t need to double effort to meet evolving automotive regulations.",
-
-  highlightText: "Scale impact with Rapidcode",
-
-  links: [
-    {
-      title: "Modernize to support mobility priorities",
-      link: "#",
-    },
-    {
-      title: "Innovate for superior driver experience",
-      link: "#",
-    },
-    {
-      title: "Build a secure automotive ecosystem",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// MARQUEE SECTION
-// ==============================
-
-export const automotiveMarqueeData = {
-  text:
-    "Download now — Explore emerging automotive trends and mobility strategies — ",
-  repeatCount: 4,
-  bgClass: "bg-primary",
-  hoverBgClass: "hover:bg-primary/90",
-};
-
-// ==============================
-// STATS SECTION
-// ==============================
-
-export const stats = [
-  {
-    number: "01",
-    highlight: "87% of automotive leaders",
-    description:
-      "agree that digital transformation directly improves customer experience and accelerates innovation.",
-    source: "IDC",
-    sourceLink: "#",
+  /* ================= CASE STUDIES ================= */
+  caseStudies: {
+    heading: "Automotive transformation success stories",
+    items: [
+      {
+        category: "Automotive",
+        title:
+          "Accelerate modernization to drive next-gen mobility",
+        description:
+          "Rapidcode modernized core platforms for a leading automotive manufacturer to support connected and electric vehicle programs.",
+        link: "#",
+      },
+      {
+        category: "Automotive",
+        title:
+          "Innovate to deliver superior driver experience",
+        description:
+          "Enabled a global automotive brand to leverage data intelligence for personalized and connected mobility experiences.",
+        link: "#",
+      },
+      {
+        category: "Automotive",
+        title:
+          "Build a secure and resilient automotive ecosystem",
+        description:
+          "Automated disaster recovery and strengthened resilience for a large automotive enterprise.",
+        link: "#",
+      },
+    ],
   },
-  {
-    number: "02",
-    highlight: "74% of executives",
-    description:
-      "say that data-driven insights are critical to remaining competitive in the mobility market.",
-    source: "Frost & Sullivan",
-    sourceLink: "#",
+
+  /* ================= REGULATION ================= */
+  regulation: {
+    heading:
+      "Stay regulation-ready while accelerating automotive innovation",
+    subText:
+      "Meet evolving automotive regulations without slowing down innovation or growth.",
+    highlightText: "Scale impact with Rapidcode",
+    links: [
+      { title: "Modernize to support mobility priorities", href: "#" },
+      { title: "Innovate for superior driver experience", href: "#" },
+      { title: "Build a secure automotive ecosystem", href: "#" },
+    ],
   },
-  {
-    number: "03",
-    highlight: "By 2026",
-    description:
-      "71% of automotive organizations will prioritize resilience to address cyber risks and supply chain disruptions.",
-    source: "Gartner",
-    sourceLink: "#",
-  },
-];
 
-// ==============================
-// COMPLIANCE SECTION
-// ==============================
-
-export const complianceContent = {
-  title: "Is your automotive organization compliance-ready?",
-  paragraphs: [
-    "Regulatory compliance is a critical foundation for the automotive industry as global standards around safety, data privacy, and sustainability continue to evolve.",
-    "Many organizations are adopting shift-left compliance strategies to ensure operational integrity while maintaining trust across partners and customers.",
-    "Rapidcode’s Regulatory Compliance Consulting Services use AI-driven capabilities to reduce risk through continuous monitoring, automated reporting, and advanced threat detection.",
-  ],
-};
-
-// ==============================
-// EXPERT SECTION
-// ==============================
-
-import expertPortrait from "@/assets/expert-portrait.jpg";
-
-export const expertSectionData = {
-  tag: "industry experts",
-  heading: "Our experts, your mobility challenges",
-  introText:
-    "Read the Q&A with Rapidcode expert, Jayakrishnan Rajagopalan",
-
-  qas: [
+  /* ================= STATS ================= */
+  stats: [
     {
-      question:
-        "What are the biggest digital challenges facing the automotive industry today?",
-      answer:
-        "Automotive organizations must balance speed, scalability, and security while managing connected vehicles, EV platforms, and increasingly complex digital ecosystems.",
+      highlight: "87% of automotive leaders",
+      description:
+        "say digital transformation directly improves customer experience and accelerates innovation.",
+      source: "IDC",
     },
     {
-      question:
-        "Legacy systems and cybersecurity risks remain major concerns. How can enterprises overcome them?",
-      answer:
-        "A phased modernization approach reduces technical debt while ensuring business continuity. AI-driven analytics, predictive maintenance, and real-time monitoring significantly strengthen automotive platforms.",
+      highlight: "74% of executives",
+      description:
+        "believe data-driven insights are critical to remaining competitive in the mobility market.",
+      source: "Frost & Sullivan",
+    },
+    {
+      highlight: "By 2026",
+      description:
+        "71% of automotive organizations will prioritize cyber and operational resilience.",
+      source: "Gartner",
     },
   ],
 
-  expert: {
-    name: "Jayakrishnan Rajagopalan",
-    designation: "Chief Architect",
-    domain: "Automotive Enterprise Architecture",
-    company: "Rapidcode India",
-    image: expertPortrait,
+  /* ================= FAQ ================= */
+  faqs: {
+    sectionMeta: {
+      heading: "You have questions. We have answers.",
+    },
+    items: [
+      {
+        question:
+          "How can automotive organizations modernize legacy platforms?",
+        answer:
+          "A phased, cloud-first modernization approach helps reduce technical debt while ensuring performance, safety, and business continuity.",
+      },
+      {
+        question:
+          "Why is cybersecurity critical in connected and electric vehicles?",
+        answer:
+          "Cybersecurity protects vehicle data, customer privacy, and ensures the reliability of connected and autonomous mobility platforms.",
+      },
+    ],
   },
-};
 
-// ==============================
-// INSIGHTS SECTION
-// ==============================
-
-import insightAi from "@/assets/insight-ai.jpg";
-import insightFintech from "@/assets/insight-fintech.jpg";
-import insightBusiness from "@/assets/insight-business.jpg";
-import insightSecurity from "@/assets/insight-security.jpg";
-
-export const insightsSectionData = {
-  heading: "Latest insights from automotive experts",
-
-  insights: [
-    {
-      image: insightAi,
-      category: "Rapidcode Institute",
-      title: "AI-powered platforms shaping the future of mobility",
-      meta: "Article | Sep 30, 2025 | Read time: 14 min",
-      link: "#",
-    },
-    {
-      image: insightFintech,
-      category: "Rapidcode Institute",
-      title:
-        "Navigating emerging technologies transforming the automotive industry",
-      meta: "Article | Sep 30, 2025 | Read time: 7 min",
-      link: "#",
-    },
-    {
-      image: insightBusiness,
-      category: "Data and AI",
-      title:
-        "4 technology trends redefining the future of automotive innovation",
-      meta: "Article | Sep 13, 2024 | Read time: 4 min",
-      link: "#",
-    },
-    {
-      image: insightSecurity,
-      category: "Cyber resilience",
-      title:
-        "Why cybersecurity is becoming mission-critical for automotive leaders",
-      meta: "Podcast | May 1, 2024",
-      link: "#",
-    },
-  ],
-};
-
-// ==============================
-// RESOURCES SECTION
-// ==============================
-
-import resourceTrends from "@/assets/resource-trends.jpg";
-import resourceReadiness from "@/assets/resource-readiness.jpg";
-
-export const resources = [
-  {
-    image: resourceTrends,
-    title: "Explore emerging automotive trends and proven mobility strategies",
-    meta: "Automotive Recommendation Paper | Sep 2025",
+  /* ================= CTA ================= */
+  cta: {
+    heading: "Take the next step",
     link: "#",
+    marqueeText:
+      "Connect — with an expert to discuss your Automotive IT Transformation — ",
+    repeatCount: 4,
   },
-  {
-    image: resourceReadiness,
-    title: "Identify your automotive readiness tipping point",
-    meta: "The Rapidcode Automotive Readiness Report 2025 | PDF",
-    link: "#",
-  },
-];
-
-// ==============================
-// CTA SECTION
-// ==============================
-
-export const ctaData = {
-  heading: "Take the next step",
-  link: "#",
-  marqueeText:
-    "Connect — with an expert to discuss your Automotive IT Transformation — ",
-  repeatCount: 4,
 };
